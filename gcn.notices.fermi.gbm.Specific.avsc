@@ -65,7 +65,7 @@
       },
       {
          "name": "duration_class",
-         "type": {"name": "TypeClassEnum","type": "enum", "symbols": ["SHORT", "LONG"]},
+         "type": {"name": "DurationClassEnum","type": "enum", "symbols": ["SHORT", "LONG"]},
          "doc": "Enum specifying classification of short or long duration"
       },
       {
@@ -75,8 +75,8 @@
       },
       {
          "name": "message_type",
-         "type": "string",
-         "doc": "Specify the type of alert message, e.g. Alert, Flight Position, Ground Position [string]"
+         "type": {"name": "TypeClassEnum","type": "enum", "symbols": ["Fermi-GBM Alert", "Fermi-GBM Flight Position", "Fermi-GBM Ground Position", "Fermi-GBM Final Position", "Fermi-GBM SubThreshold"]},
+         "doc": "Enum which specifies the type of alert message, e.g. Alert, Flight Position, Ground Position [string]"
       }
      ]
   }
