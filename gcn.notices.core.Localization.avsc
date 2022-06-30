@@ -35,7 +35,7 @@
     },
     { 
       "name": "systematic_included", 
-      "type": "boolean", 
+      "type": ["boolean", "null"], 
       "doc": "Contains true when the systematic error is included and false when the systematic error is not included", 
       "default": false
     },
